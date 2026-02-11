@@ -6,13 +6,8 @@ format: html
 
 # hola
 
-chuchuchu
+zzzz
 
 ```{r}
 2 + 2
-
-#rsconnect::writeManifest(contentCategory = "site")
-
-#renv::init()
-
 ```
