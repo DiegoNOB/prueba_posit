@@ -9,7 +9,7 @@ format: html
 zzz
 
 ```{r}
-2 + 2
+Sys.time()
 ```
 
 ```{r, eval=FALSE}
