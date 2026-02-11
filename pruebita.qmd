@@ -10,9 +10,35 @@ zzz
 
 ```{r}
 Sys.time()
+#rsconnect::writeManifest()
 ```
 
 ```{r, eval=FALSE}
-rsconnect::writeManifest()
-```
+ruta <- "C:/Users/diego/Documents/IECS/Ej_PositCC/prueba_posit/"
 
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(rsconnect)
+
+datos <- read_excel("ejemplo.xlsx") %>% mutate(V4 = as.character(Sys.time()))
+save(datos, file = paste0(ruta, "datos.RData"))
+
+archivos_www <- list.files(ruta, recursive = TRUE) %>% str_subset("^www/")
+
+# deployApp(
+#   appDir = ruta,
+#   appFiles = c(
+#     "app.R",
+#     "datos.RData",
+#     archivos_www
+#   ),
+#   appName = "iecs_pruebaposit",
+#   account = "diego",
+#   upload = TRUE,
+#   forceUpdate = TRUE,
+#   launch.browser = FALSE
+# )
+
+```

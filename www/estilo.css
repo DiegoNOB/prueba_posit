@@ -1,0 +1,58 @@
+:root {
+  --fuerte: #005F73;
+  --claro: #FF8C42;
+  --blanco: #FFFFFF;
+  --negro: #000000;
+}
+
+/* Barra principal */
+.navbar-default {
+  background-color: var(--fuerte);
+}
+
+/* Barra principal color texto */
+.navbar-default .navbar-brand {
+  color: var(--blanco);
+}
+
+/* Barra principal color texto hover */
+.navbar-default .navbar-brand:hover {
+  color: var(--claro);
+}
+
+/* Panel Izquierda */
+.well {
+  background-color: var(--claro);
+  border: 1px solid var(--negro);
+}
+
+/* tab elegida */
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
+  color: var(--negro);
+  background-color: var(--claro);
+}
+
+/* tab no elegida */
+.navbar-default .navbar-nav>li>a {
+  color: var(--blanco);
+  background-color: var(--fuerte);
+}
+
+/* tab hover */
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus {
+  color: var(--negro);
+  background-color: var(--claro);
+}
+
+/* botones de forest plot y summary tables elegido */
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {
+  color: var(--blanco);
+  background-color: var(--fuerte);
+}
+
+/* botones de forest plot y summary tables no elegido */
+.nav-pills>li>a {
+  color: var(--negro);
+  background-color: var(--blanco);
+}
+
