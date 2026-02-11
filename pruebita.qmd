@@ -25,6 +25,8 @@ library(rsconnect)
 datos <- read_excel("ejemplo.xlsx") %>% mutate(V4 = as.character(Sys.time()))
 save(datos, file = paste0(ruta, "datos.RData"))
 
+datos
+
 archivos_www <- list.files(ruta, recursive = TRUE) %>% str_subset("^www/")
 
 # deployApp(
