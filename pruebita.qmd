@@ -1,0 +1,18 @@
+---
+title: "Prueba Posit Cloud Connect"
+author: "Diego"
+format: html
+---
+
+# hola
+
+chuchuchu
+
+```{r}
+2 + 2
+
+#rsconnect::writeManifest(contentCategory = "site")
+
+#renv::init()
+
+```
