@@ -6,8 +6,13 @@ format: html
 
 # hola
 
-zzzz
+zzz
 
 ```{r}
 2 + 2
 ```
+
+```{r, eval=FALSE}
+rsconnect::writeManifest()
+```
+
