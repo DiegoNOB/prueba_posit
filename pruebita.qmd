@@ -13,7 +13,7 @@ Sys.time()
 #rsconnect::writeManifest()
 ```
 
-```{r, eval=FALSE}
+```{r}
 ruta <- "C:/Users/diego/Documents/IECS/Ej_PositCC/prueba_posit/"
 
 library(readxl)
