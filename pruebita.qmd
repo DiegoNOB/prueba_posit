@@ -13,7 +13,7 @@ Sys.time()
 #rsconnect::writeManifest()
 ```
 
-```{r}
+```{r, eval=FALSE}
 library(readxl)
 library(dplyr)
 library(tidyr)
