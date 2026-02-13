@@ -14,8 +14,6 @@ Sys.time()
 ```
 
 ```{r}
-ruta <- "C:/Users/diego/Documents/IECS/Ej_PositCC/prueba_posit/"
-
 library(readxl)
 library(dplyr)
 library(tidyr)
@@ -23,11 +21,11 @@ library(stringr)
 library(rsconnect)
 
 datos <- read_excel("ejemplo.xlsx") %>% mutate(V4 = as.character(Sys.time()))
-save(datos, file = paste0(ruta, "datos.RData"))
+save(datos, file = "datos.RData")
 
 datos
 
-archivos_www <- list.files(ruta, recursive = TRUE) %>% str_subset("^www/")
+archivos_www <- list.files(recursive = TRUE) %>% str_subset("^www/")
 
 # deployApp(
 #   appDir = ruta,
